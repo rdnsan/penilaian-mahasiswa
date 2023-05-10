@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: rgba(0, 0, 0, 0.04);
+  color: rgba(0, 0, 0, 0.85);
+}
+
+@layer utilities {
+  /* Width */
+  .custom-scroll::-webkit-scrollbar {
+    width: 7px;
+  }
+
+  /* Track */
+  .custom-scroll::-webkit-scrollbar-track {
+    background: #000;
+  }
+
+  /* Handle */
+  .custom-scroll::-webkit-scrollbar-thumb {
+    background: #999;
+    border-radius: 8px;
+  }
+
+  /* Handle on hover */
+  .custom-scroll::-webkit-scrollbar-thumb:hover {
+    background: #888;
+  }
+}
